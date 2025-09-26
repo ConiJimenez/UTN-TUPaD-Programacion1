@@ -21,9 +21,9 @@ elif num % 2 != 0:
 edad = int (input("Ingrese su edad: "))
 if edad < 12:
     print ("Usted es un/a niño/a")
-elif edad >= 12 & edad < 18:
+elif edad >= 12 and edad < 18:
     print ("Usted es un/a adolescente")
-elif edad >= 18 & edad < 30:
+elif edad >= 18 and edad < 30:
     print ("Usted es un adulto/a joven")
 if edad >= 30:
     print ("Usted es un/a adulto/a")
@@ -81,18 +81,40 @@ else:
 magnitud = float(input("Ingrese la magnitud del terremoto: "))
 if magnitud < 3:
     print("Muy leve (imperceptible).")
-elif magnitud >= 3 & magnitud < 4:
+elif magnitud >= 3 and magnitud < 4:
     print("Leve (ligeramente perceptible).")
-elif magnitud >= 4 & magnitud < 5:
+elif magnitud >= 4 and magnitud < 5:
     print("Moderado (sentido por personas, pero generalmente no causa daños).")
-elif magnitud >= 5 & magnitud < 6:
+elif magnitud >= 5 and magnitud < 6:
     print("Fuerte (puede causar daños en estructuras débiles).")
-elif magnitud >= 6 & magnitud < 7:
+elif magnitud >= 6 and magnitud < 7:
     print("Muy Fuerte (puede causar daños significativos).")
 elif magnitud >= 7:
     print("Extremo (puede causar graves daños a gran escala).")
 
-
-
-
 #Ejercicio 10:
+hemisferio = input("En qué hemisferio estás? (N/S): ").upper()
+mes = int(input("Qué mes es? Mes del año 1-12: "))
+dia = int(input("Qué día es?: "))
+
+if (mes == 12 and dia >= 21) or (mes in [1, 2]) or (mes == 3 and dia <= 20):
+    estacion_norte = "Invierno"
+    estacion_sur = "Verano"
+elif (mes == 3 and dia >= 21) or (mes in [4, 5]) or (mes == 6 and dia <= 20):
+    estacion_norte = "Primavera"
+    estacion_sur = "Otoño"
+elif (mes == 6 and dia >= 21) or (mes in [7, 8]) or (mes == 9 and dia <= 20):
+    estacion_norte = "Verano"
+    estacion_sur = "Invierno"
+elif (mes == 9 and dia >= 21) or (mes in [10, 11]) or (mes == 12 and dia <= 20):
+    estacion_norte = "Otoño"
+    estacion_sur = "Primavera"
+else:
+    print("Fecha no válida.")
+
+if hemisferio == "N":
+    print("Estás en:", estacion_norte)
+elif hemisferio == "S":
+    print("Estás en:", estacion_sur)
+else:
+    print("Hemisferio no válido.")
