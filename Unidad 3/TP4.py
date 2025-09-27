@@ -36,26 +36,24 @@ print("La suma de los dos números enteros entre", num_inicial, "y", num_final, 
 suma = 0
 num = int(input("Ingrese un número entero (0 para terminar): "))
 
-while True:
+while num != 0:
+    suma += num
     num = int(input("Ingrese otro número entero (0 para terminar): "))
-    if num == 0:
-        break
-suma += num
-
 print("La suma total es:", suma)
 
 #Ejercicio 5:
 numSecreto = 7
 intentos = 0
-print("Adivina el número entre 0 y 9")
+acertado = 0
 
-while True: 
+while acertado == 0:
     numUsuario = int(input("Ingresa tu intento: "))
     intentos += 1
 
+
     if numUsuario == numSecreto:
         print("Correcto! Adivinaste el número en", intentos, "intento(s).")
-        break
+        acertado = 1
     else:
         print("Incorrecto. Intenta de nuevo.")
 
@@ -109,11 +107,21 @@ media = suma / totalNumeros
 print("La media de los", totalNumeros, "números ingresados es:", media)
 
 #Ejercicio 10:
-num = input("Ingresa un número entero: ")
+num = int(input("Ingresa un número entero: "))
 
-if num[0] == "-":
-    invertido = "-" + num[:0:-1]
-else: 
-    invertido = num[::-1]
+if num < 0:
+    signo = -1
+    num = num * -1
+else:
+    signo = 1
 
-print("Número invertido:", invertido)
+invertido = 0
+
+while num != 0:
+    digito = num % 10
+    invertido = invertido * 10 + digito
+    num = num // 10
+
+invertido = invertido * signo
+
+print("Numero invertido:", invertido)
