@@ -1,0 +1,34 @@
+# Ejercicio 1:
+i = 0
+
+while i <= 100:
+    print(i)
+    i += 1
+
+# Ejercicio 2:
+num = input("Ingrese un número entero: ")
+
+
+numero_entero = int(num)
+if numero_entero < 0:
+    numero_entero = -numero_entero
+else:
+    print("Entrada inválida. Debe ingresar un número entero.")
+
+cantidad_digitos = len(str(numero_entero))
+print("El número tiene", cantidad_digitos, "digito(s).")
+
+#Ejercicio 3:
+num_inicial = int(input("Ingrese el primer número: "))
+num_final = int(input("Ingrese el segundo número: "))
+
+if num_inicial > num_final:
+    num_inicial, num_final = num_final, num_inicial
+
+suma = 0
+
+for i in range(num_inicial + 1, num_final):
+    suma += i
+
+print("La suma de los dos números enteros entre", num_inicial, "y", num_final, "es:", suma)
+
