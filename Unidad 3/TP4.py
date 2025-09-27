@@ -60,5 +60,10 @@ while True:
         print("Incorrecto. Intenta de nuevo.")
 
 #Ejercicio 6:
+for num in range(100, -1, -1):
+    if num % 2 == 0:
+        print(num)
+    
+#Ejercicio 7:
 
 
