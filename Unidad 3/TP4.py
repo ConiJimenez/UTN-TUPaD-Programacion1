@@ -74,3 +74,29 @@ if numero >= 0:
     print("La suma de los números entre 0 y", numero, "es:", suma)
 else:
     print("El número debe ser positivo.")
+
+#Ejercicio 8:
+totalNumeros = 100
+
+pares = 0
+impares = 0
+positivos = 0
+negativos = 0
+
+for i in range(totalNumeros):
+    numero = int(input("Ingresa un número entero (" + str(i + 1) + "/" + str(totalNumeros) + "): "))
+    
+    if numero % 2 == 0:
+        pares += 1
+    else: 
+        impares += 1
+    
+    if numero > 0:
+        positivos += 1
+    elif numero < 0:
+        negativos += 1
+
+
+#Ejercicio 9:
+
+#Ejercicio 10:
