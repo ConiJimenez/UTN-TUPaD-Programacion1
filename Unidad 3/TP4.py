@@ -65,5 +65,12 @@ for num in range(100, -1, -1):
         print(num)
     
 #Ejercicio 7:
+numero = int(input("Ingresa un número entero positivo: "))
 
-
+if numero >= 0:
+    suma = 0
+    for i in range(0, numero + 1):
+        suma += i
+    print("La suma de los números entre 0 y", numero, "es:", suma)
+else:
+    print("El número debe ser positivo.")
