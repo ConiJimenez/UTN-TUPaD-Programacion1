@@ -45,4 +45,20 @@ suma += num
 print("La suma total es:", suma)
 
 #Ejercicio 5:
+numSecreto = 7
+intentos = 0
+print("Adivina el número entre 0 y 9")
+
+while True: 
+    numUsuario = int(input("Ingresa tu intento: "))
+    intentos += 1
+
+    if numUsuario == numSecreto:
+        print("Correcto! Adivinaste el número en", intentos, "intento(s).")
+        break
+    else:
+        print("Incorrecto. Intenta de nuevo.")
+
+#Ejercicio 6:
+
 
