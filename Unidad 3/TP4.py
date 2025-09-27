@@ -32,3 +32,17 @@ for i in range(num_inicial + 1, num_final):
 
 print("La suma de los dos números enteros entre", num_inicial, "y", num_final, "es:", suma)
 
+#Ejercicio 4:
+suma = 0
+num = int(input("Ingrese un número entero (0 para terminar): "))
+
+while True:
+    num = int(input("Ingrese otro número entero (0 para terminar): "))
+    if num == 0:
+        break
+suma += num
+
+print("La suma total es:", suma)
+
+#Ejercicio 5:
+
