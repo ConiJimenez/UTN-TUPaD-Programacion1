@@ -96,7 +96,24 @@ for i in range(totalNumeros):
     elif numero < 0:
         negativos += 1
 
-
 #Ejercicio 9:
+totalNumeros = 100
+suma = 0
+
+for i in range (totalNumeros):
+    numero = int(input("Ingresa un número entero (" + str(i + 1) + "/" + str(totalNumeros) + "): "))
+    suma += numero
+
+media = suma / totalNumeros
+
+print("La media de los", totalNumeros, "números ingresados es:", media)
 
 #Ejercicio 10:
+num = input("Ingresa un número entero: ")
+
+if num[0] == "-":
+    invertido = "-" + num[:0:-1]
+else: 
+    invertido = num[::-1]
+
+print("Número invertido:", invertido)
