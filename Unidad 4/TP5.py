@@ -15,4 +15,16 @@ nota_mas_baja = min(notas)
 
 print(f"La nota más baja es: {nota_mas_baja}")
 
+#Ejercicio 2:
+productos = []
+
+print("Ingrese 5 productos: ")
+for i in range(5):
+    producto = input(f"Producto {i + 1}: ")
+    productos.append(producto)
+
+productosOrdenados = sorted(productos)
+print("\nLista de productos ordenados: ")
+print(productosOrdenados)
+
 
