@@ -151,3 +151,13 @@ for i in range(len(notas)):
 
 suma_materias = [0, 0, 0]
 
+for fila in notas:
+    for j in range(3):
+        suma_materias[j] += fila[j]
+
+print("\nPromedios por materia: ")
+for i in range(3):
+    promedio = suma_materias[i] / len(notas)
+    print(f"Materia {i + 1}: {promedio:2f}")
+
+    
