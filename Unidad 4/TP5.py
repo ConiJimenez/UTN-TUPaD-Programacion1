@@ -134,3 +134,20 @@ for i in range(len(temperaturas)):
         dia_may_amplitud = i + 1
 print(f"Mayor amplitud térmica: {mayor_amplitud}°C (Día {dia_may_amplitud})")
 
+#Ejercicio 8:
+notas = [
+    [5, 4, 8],
+    [8, 10, 10],
+    [4, 2, 1],
+    [3, 8, 9],
+    [9, 6, 7],
+]
+
+print("Promedios por estudiante: ")
+
+for i in range(len(notas)):
+    promedio = sum(notas[i]) / len(notas[i])
+    print(f"Estudiante {i + 1}: {promedio:2f}")
+
+suma_materias = [0, 0, 0]
+
