@@ -60,6 +60,26 @@ for valor in [1, 3, 5]:
 print("Lista sin 1, 3 y 5:")
 print(datos)
 
+#Ejercicio 5: 
+estudiantes = ["Lorena", "Pablo", "Jorge", "Pedro", "Ismael", "Hernan", "Ines", "Alicia"]
 
+accion = input("\n¿Quiere agregar un nuevo estudiante o eliminar uno existente? (escribí 'agregar' o 'eliminar'): ").lower()
 
+if accion == "agregar":
+    nuevo = input("Ingresa el nombre del nuevo/a estudiante: ")
+    estudiantes.append(nuevo)
+    print(f"{nuevo} ha sido ingresado/a a la lista.")
+
+elif accion == "eliminar":
+    eliminar_estudiante = input("¿A qué estudiante de la lista desea eliminar?: ")
+    estudiantes.remove(eliminar_estudiante)
+    print(f"{eliminar_estudiante} ha sido eliminado/a de la lista.")
+else:
+    print("Opción no válida. No se realizaron cambios.")
+
+print("\nLista final de estudiantes: ")
+print(estudiantes)
+
+#Ejercicio 6:
+lista = [7, 5, 4, 9, 3, 2, 1]
 
