@@ -160,4 +160,29 @@ for i in range(3):
     promedio = suma_materias[i] / len(notas)
     print(f"Materia {i + 1}: {promedio:2f}")
 
-    
+#Ejercicio 9:
+tablero = [
+    ["-", "-", "-"],
+    ["-", "-", "-"],
+    ["-", "-", "-"],
+]
+
+for fila in tablero:
+    print("-".join(fila))
+
+fila = int(input("Ingresa la fila (0, 1 o 2): "))
+columna = int(input("Ingresa la columna (0, 1 o 2): "))
+tablero[fila][columna] = "A"
+
+for fila in tablero:
+    print("".join(fila))
+
+fila = int(input("Ingresa la fila (0, 1 o 2): "))
+columna = int(input("Ingresa la columna (0, 1 o 2): "))
+tablero[fila][columna] = "B"
+
+for fila in tablero:
+    print("".join(fila))
+
+#Ejercicio 10:
+
