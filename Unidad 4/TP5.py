@@ -202,7 +202,7 @@ for i in range(4):
     print(f"Producto {i+1}: {total} unidades")
 
 print("\nVentas totales al día:")
-total_dias = 0
+total_dias = []
 
 for dia in range(7):
     total_dia = 0
@@ -210,4 +210,9 @@ for dia in range(7):
         total_dia += ventas[productos][dia]
     total_dias.append(total_dia)
     print(f"Día {dia+1}: {total_dia} unidades")
-    
+
+dia_mas_ventas = total_dias.index(max(total_dias)) + 1
+print(f"\n Día con mayores ventas: Día {dia_mas_ventas} ({max(total_dias)} unidades)")
+
+max_productos = total_productos.index(max(total_productos)) + 1
+print(f"\n Producto más vendido de la semana: Producto {max_productos} ({max(total_productos)} unidades)")
