@@ -186,3 +186,28 @@ for fila in tablero:
 
 #Ejercicio 10:
 
+ventas = [
+    [10, 14, 13, 20, 15, 14, 22],
+    [9, 4, 7, 3, 5, 4, 8],
+    [15, 13, 17, 20, 27, 29, 25],
+    [50, 35, 45, 30, 33, 48, 37],
+]
+
+print("Total por productos:")
+total_productos = []
+
+for i in range(4):
+    total = sum(ventas[i])
+    total_productos.append(total)
+    print(f"Producto {i+1}: {total} unidades")
+
+print("\nVentas totales al día:")
+total_dias = 0
+
+for dia in range(7):
+    total_dia = 0
+    for productos in range(4):
+        total_dia += ventas[productos][dia]
+    total_dias.append(total_dia)
+    print(f"Día {dia+1}: {total_dia} unidades")
+    
