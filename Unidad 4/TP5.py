@@ -53,5 +53,13 @@ print(f"Cantidad de números impares: {len(num_impares)}")
 #Ejercicio 4:
 datos = [1, 3, 5, 3, 7, 1, 9, 5, 3]
 
+for valor in [1, 3, 5]:
+    while valor in datos:
+        datos.remove(valor)
+
+print("Lista sin 1, 3 y 5:")
+print(datos)
+
+
 
 
