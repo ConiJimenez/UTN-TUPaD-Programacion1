@@ -98,3 +98,39 @@ print("Lista ordenada (de menor a mayor): ")
 print(lista)
 
 #Ejercicio 7:
+temperaturas = [ 
+    [15, 25],
+    [18, 24],
+    [11, 18],
+    [18, 22],
+    [14, 25],
+    [19, 27],
+    [17, 22],
+]
+
+suma_min = 0
+suma_max = 0
+
+for t in temperaturas:
+    suma_min += t[0]
+    suma_max += t[1]
+
+promedio_min = suma_min / 7
+promedio_max = suma_max / 7
+
+print(f"El promedio de las temperaturas mínimas es: {promedio_min:.2f} °C")
+print(f"El promedio de las temperaturas máximas es: {promedio_max:.2f} °C")
+
+mayor_amplitud = 0
+dia_may_amplitud = 0
+
+for i in range(len(temperaturas)):
+    min_temp = temperaturas[i][0]
+    max_temp = temperaturas[i][1]
+    amplitud = max_temp - min_temp
+
+    if amplitud > mayor_amplitud:
+        mayor_amplitud = amplitud
+        dia_may_amplitud = i + 1
+print(f"Mayor amplitud térmica: {mayor_amplitud}°C (Día {dia_may_amplitud})")
+
