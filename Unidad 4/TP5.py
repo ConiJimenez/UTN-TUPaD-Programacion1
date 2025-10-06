@@ -83,3 +83,18 @@ print(estudiantes)
 #Ejercicio 6:
 lista = [7, 5, 4, 9, 3, 2, 1]
 
+print("\nLista original: ")
+print(lista)
+
+cantidad_elementos = len(lista)
+
+for indice_pasada in range(cantidad_elementos - 1):
+
+    for indice_actual in range(cantidad_elementos - 1 - indice_pasada):
+        if lista[indice_actual] > lista[indice_actual + 1]:
+            lista[indice_actual], lista[indice_actual + 1] = lista[indice_actual + 1], lista[indice_actual]
+
+print("Lista ordenada (de menor a mayor): ")
+print(lista)
+
+#Ejercicio 7:
