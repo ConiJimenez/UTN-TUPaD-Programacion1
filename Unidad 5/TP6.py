@@ -102,8 +102,13 @@ def calcular_imc(peso, altura):
     imc = peso / (altura**2)
     return imc
 
-
 #Programa Principal:
+peso = int(input("Ingrese el peso en kilogramos: "))
+altura = float(input("Ingrese la altura en metros: "))
+
+imc = calcular_imc(peso, altura)
+
+print(f"El IMC es igual a {imc}")
 
 #EJERCICIO 9:
 
