@@ -132,3 +132,11 @@ def calcular_promedio(a, b, c):
     return promedio 
 
 #Programa Principal:
+a = int(input("Ingrese un primer número: "))
+b = int(input("Ingrese un segundo número: "))
+c = int(input("Ingrese un tercer número: "))
+
+promedio = calcular_promedio(a, b, c)
+
+print(f"El promedio de {a}, {b} y {c} es igual a: ")
+
