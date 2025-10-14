@@ -26,3 +26,5 @@ apellido_ingresado = input("Ingrese su apellido: ")
 edad_ingresada = input("Ingrese su edad: ")
 residencia_ingresada = input("Ingrese su lugar de residencia: ")
 print(informacion_personal(nombre_ingresado, apellido_ingresado, edad_ingresada, residencia_ingresada))
+
+#EJERCICIO 4:
