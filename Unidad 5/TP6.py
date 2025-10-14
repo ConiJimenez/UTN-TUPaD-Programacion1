@@ -8,10 +8,11 @@ print(hola_mundo())
 
 # Definición de funciones: 
 def saludar_usuario(nombre):
-    return saludar_usuario
+    return f"Hola {nombre}!"
 
 # Programa Principal:
-input("Ingrese su nombre: ")
-print(f"Hola {saludar_usuario}")
+nombre_ingresado = input("Ingrese su nombre: ")
+print(saludar_usuario(nombre_ingresado))
 
+# EJERCICIO N° 3:
 
