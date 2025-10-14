@@ -79,10 +79,21 @@ tabla_multiplicar(numero)
 #EJERCICIO 7:
 
 #Definición de funciones:
-
-
+def operaciones_basicas(a, b):
+    suma = a + b
+    resta = a - b 
+    multiplicacion = a * b 
+    division = a / b 
+    return suma, resta, multiplicacion, division
 
 #Programa Principal:
+
+a = int(input("Ingrese un primer número: "))
+b = int(input("Ingrese un segundo número: "))
+
+suma, resta, multiplicacion, division = operaciones_basicas(a, b)
+
+print(f"{a} + {b} = {suma}\n{a} - {b} = {resta}\n{a} x {b} = {multiplicacion}\n{a} / {b} = {division}")
 
 #EJERCICIO 8:
 
