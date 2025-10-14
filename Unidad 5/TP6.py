@@ -18,7 +18,7 @@ print(saludar_usuario(nombre_ingresado))
 
 # Definición de funciones: 
 def informacion_personal(nombre, apellido, edad, residencia):
-    return f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}"
+    return f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}."
 
 # Programa Principal:
 nombre_ingresado = input("Ingrese su nombre: ")
