@@ -52,7 +52,15 @@ print(f"El perímetro del círculo es igual a {perimetro}")
 #EJERCICIO 5:
 
 #Definición de funciones:
-
-
+def segundos_a_horas(segundos):
+    horas = segundos / 3600
+    return horas
 
 #Programa Principal:
+
+segundos = int(input("Ingrese la cantidad de segundos que desea pasar a horas: "))
+
+horas = segundos_a_horas(segundos)
+
+print(f"{segundos} segundos son {horas} horas.")
+
