@@ -16,3 +16,13 @@ print(saludar_usuario(nombre_ingresado))
 
 # EJERCICIO N° 3:
 
+# Definición de funciones: 
+def informacion_personal(nombre, apellido, edad, residencia):
+    return f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}"
+
+# Programa Principal:
+nombre_ingresado = input("Ingrese su nombre: ")
+apellido_ingresado = input("Ingrese su apellido: ")
+edad_ingresada = input("Ingrese su edad: ")
+residencia_ingresada = input("Ingrese su lugar de residencia: ")
+print(informacion_personal(nombre_ingresado, apellido_ingresado, edad_ingresada, residencia_ingresada))
