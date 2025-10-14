@@ -28,3 +28,31 @@ residencia_ingresada = input("Ingrese su lugar de residencia: ")
 print(informacion_personal(nombre_ingresado, apellido_ingresado, edad_ingresada, residencia_ingresada))
 
 #EJERCICIO 4:
+
+#Definición de funciones:
+def calcular_area_circulo(radio):
+    import math
+    area = math.pi * radio**2
+    return area
+
+def calcular_perimetro_circulo(radio):
+    import math
+    perimetro = 2 * math.pi * radio
+    return perimetro
+
+#Programa Principal:
+radio = float(input(("Ingrese el radio del círculo: ")))
+
+area = calcular_area_circulo(radio)
+perimetro = calcular_perimetro_circulo(radio)
+
+print(f"El área del círculo es igual a {area}")
+print(f"El perímetro del círculo es igual a {perimetro}")
+
+#EJERCICIO 5:
+
+#Definición de funciones:
+
+
+
+#Programa Principal:
