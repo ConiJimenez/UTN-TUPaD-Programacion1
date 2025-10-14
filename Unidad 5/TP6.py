@@ -113,10 +113,16 @@ print(f"El IMC es igual a {imc}")
 #EJERCICIO 9:
 
 #Definición de funciones:
-
-
+def celsius_a_fahrenheit(celsius):
+    fahrenheit = celsius * 9/5 + 32
+    return fahrenheit
 
 #Programa Principal:
+celsius = float(input("Ingrese la temperatura en grados Celsius: "))
+
+fahrenheit = celsius_a_fahrenheit(celsius)
+
+print(f"La temperatura {celsius} °C en grados Fahrenheit es: {fahrenheit} °F")
 
 #EJERCICIO 10:
 
