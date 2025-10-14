@@ -138,5 +138,5 @@ c = int(input("Ingrese un tercer número: "))
 
 promedio = calcular_promedio(a, b, c)
 
-print(f"El promedio de {a}, {b} y {c} es igual a: ")
+print(f"El promedio de {a}, {b} y {c} es igual a {promedio} ")
 
