@@ -127,7 +127,8 @@ print(f"La temperatura {celsius} °C en grados Fahrenheit es: {fahrenheit} °F")
 #EJERCICIO 10:
 
 #Definición de funciones:
-
-
+def calcular_promedio(a, b, c):
+    promedio = (a + b + c) / 3
+    return promedio 
 
 #Programa Principal:
