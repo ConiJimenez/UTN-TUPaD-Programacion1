@@ -64,3 +64,42 @@ horas = segundos_a_horas(segundos)
 
 print(f"{segundos} segundos son {horas} horas.")
 
+#EJERCICIO 6:
+
+#Definición de funciones:
+
+
+
+#Programa Principal:
+
+#EJERCICIO 7:
+
+#Definición de funciones:
+
+
+
+#Programa Principal:
+
+#EJERCICIO 8:
+
+#Definición de funciones:
+
+
+
+#Programa Principal:
+
+#EJERCICIO 9:
+
+#Definición de funciones:
+
+
+
+#Programa Principal:
+
+#EJERCICIO 10:
+
+#Definición de funciones:
+
+
+
+#Programa Principal:
