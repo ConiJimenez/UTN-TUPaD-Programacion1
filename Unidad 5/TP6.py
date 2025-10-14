@@ -67,10 +67,14 @@ print(f"{segundos} segundos son {horas} horas.")
 #EJERCICIO 6:
 
 #Definición de funciones:
-
-
+def tabla_multiplicar(numero):
+    for i in range(1, 11):
+        print(f"{numero} x {i} = {numero*i}")
 
 #Programa Principal:
+numero = int(input("Ingrese un número del 1 al 10: "))
+
+tabla_multiplicar(numero)
 
 #EJERCICIO 7:
 
