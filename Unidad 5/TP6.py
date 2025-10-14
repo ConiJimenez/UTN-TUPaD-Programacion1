@@ -98,7 +98,9 @@ print(f"{a} + {b} = {suma}\n{a} - {b} = {resta}\n{a} x {b} = {multiplicacion}\n{
 #EJERCICIO 8:
 
 #Definición de funciones:
-
+def calcular_imc(peso, altura):
+    imc = peso / (altura**2)
+    return imc
 
 
 #Programa Principal:
