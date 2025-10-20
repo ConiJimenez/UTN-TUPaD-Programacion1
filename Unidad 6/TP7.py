@@ -1,11 +1,5 @@
-stock = {
-    "lapiz": 10,
-    "cuaderno": 5,
-    "goma": 3
-}
+#EJERCICIO 1:
+precios_frutas = {'Banana': 1200, 'Ananá': 2500, 'Melón': 3000, 'Uva': 
+1450}
 
-stock["cuaderno"] -= 2
-stock["regla"] = stock.get("regla", 0) + 1
-stock["goma"] = 0
 
-print(stock)
