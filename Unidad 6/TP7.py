@@ -8,3 +8,8 @@ precios_frutas['Pera'] = 2300
 
 print(precios_frutas)
 
+precios_frutas['Banana'] = 1330
+precios_frutas['Manzana'] = 1700
+precios_frutas['Melón'] = 2800
+
+print(precios_frutas)
