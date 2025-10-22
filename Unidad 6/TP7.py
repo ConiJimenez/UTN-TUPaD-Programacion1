@@ -20,3 +20,5 @@ print(precios_frutas)
 frutas = list(precios_frutas.keys())
 
 print(frutas)
+
+#EJERCICIO 4:
