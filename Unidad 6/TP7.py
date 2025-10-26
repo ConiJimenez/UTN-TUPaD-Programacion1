@@ -37,9 +37,5 @@ for i in range(5):
 
 consulta_nombre = input("Ingrese el nombre que desea consultar: ")
 
-if consulta_nombre in contactos:
-    print(f"El número de {consulta_nombre} es: {contactos[consulta_nombre]}")
-else:
-    print(f"No se encontró el contacto solicitado {consulta_nombre}.")
-
 #EJERCICIO 5:
+
