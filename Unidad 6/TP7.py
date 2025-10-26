@@ -22,3 +22,15 @@ frutas = list(precios_frutas.keys())
 print(frutas)
 
 #EJERCICIO 4:
+contactos = {}
+
+for i in range(5):
+    nombre = input(f"Ingrese su nombre: ")
+    telefono = input("Ingrese el número teléfonico: ")
+   
+    
+    contacto = {"nombre": nombre, "telefono": telefono}
+
+    contactos[nombre] = telefono
+
+    print(contactos)
