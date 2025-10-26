@@ -25,7 +25,7 @@ print(frutas)
 contactos = {}
 
 for i in range(5):
-    nombre = input(f"Ingrese su nombre: ")
+    nombre = input("Ingrese su nombre: ")
     telefono = input("Ingrese el número teléfonico: ")
    
     
@@ -34,3 +34,12 @@ for i in range(5):
     contactos[nombre] = telefono
 
     print(contactos)
+
+consulta_nombre = input("Ingrese el nombre que desea consultar: ")
+
+if consulta_nombre in contactos:
+    print(f"El número de {consulta_nombre} es: {contactos[consulta_nombre]}")
+else:
+    print(f"No se encontró el contacto solicitado {consulta_nombre}.")
+
+#EJERCICIO 5:
