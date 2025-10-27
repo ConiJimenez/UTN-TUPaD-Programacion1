@@ -116,5 +116,24 @@ producto = input("Ingrese el producto a consultar: ")
 print(stock_mercaderia.get(producto, "Producto no encontrado"))  
 
 #Agregar unidades al stock si el producto ya existe:
+producto_actualizar = input("Ingrese el producto a actualizar: ")
+if producto_actualizar in stock_mercaderia:
+    unidades = int(input("Ingrese la cantidad de unidades a agregar: "))
+    stock_mercaderia[producto_actualizar] += unidades
+    print(f"Nuevo stock de {producto_actualizar}: {stock_mercaderia[producto_actualizar]}")
+else:
+    print("El producto no existe. Se puede agregar como nuevo.")
 
 #Agregar nuevo producto si no existe:
+nuevo_producto = input("Ingrese el nombre del nuevo producto que desea agregar: ")
+if nuevo_producto not in stock_mercaderia:
+    unidades = int(input("Ingrese la cantidad inicial de unidades: "))
+    stock_mercaderia[nuevo_producto] = unidades
+    print(f"Porducto {nuevo_producto} agregado con {unidades} unidades.")
+else:
+    print("El producto ya existe. Utilice opción de actualizar stock")
+
+#Mostrar el stock final:
+print("Stock final: ")
+for nombre, cantidad in stock_mercaderia.items():
+    print(f"{nombre}: {cantidad}")
