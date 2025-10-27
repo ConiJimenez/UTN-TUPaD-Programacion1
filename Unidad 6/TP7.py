@@ -72,7 +72,6 @@ for i in range(3):
 
     alumnos[nombre] = notas
 
-print("\nPromedio de los/as alumnos/as:")
 for nombre, notas in alumnos.items():
     promedio = sum(notas) / len(notas)
     print(f"{nombre}: {promedio:.2f}")
