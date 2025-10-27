@@ -38,4 +38,12 @@ for i in range(5):
 consulta_nombre = input("Ingrese el nombre que desea consultar: ")
 
 #EJERCICIO 5:
+frase = input("Ingresa una frase: ")
+
+palabras = frase.split()
+
+palabras_unicas = set(palabras)
+
+print("\nPalabras únicas:")
+print(palabras_unicas)
 
