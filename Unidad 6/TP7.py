@@ -59,7 +59,22 @@ print("Cantidad de veces que aparece cada palabra:")
 print(recuento)
 
 #EJERCICIO 6:
-alumnos = []
+alumnos = {}
 
 for i in range(3):
     nombre = input("Ingrese su nombre: ")
+
+    nota1 = float(input("Ingrese la primera nota: "))
+    nota2 = float(input("Ingrese la segunda nota: "))
+    nota3 = float(input("Ingrese la tercera nota: "))
+
+    notas = (nota1, nota2, nota3)
+
+    alumnos[nombre] = notas
+
+print("\nPromedio de los/as alumnos/as:")
+for nombre, notas in alumnos.items():
+    promedio = sum(notas) / len(notas)
+    print(f"{nombre}: {promedio:.2f}")
+
+#EJERCICIO 7:
