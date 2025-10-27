@@ -139,7 +139,9 @@ for nombre, cantidad in stock_mercaderia.items():
     print(f"{nombre}: {cantidad}")
 
 #EJERCICIO 9:
-agenda = {}
+agenda = {("Lunes", "10.00"): "Reunión con equipo", ("Martes", "13.00"): "Asistir a congreso", ("Viernes", "08.00"): "Ateneo de casos" }
+
+
 
 
 
