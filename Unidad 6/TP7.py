@@ -111,7 +111,10 @@ print("Aprobó al menos un parcial de ambos:", al_menos_uno)
 #EJERCICIO 8:
 stock_mercaderia = {"aceite": 300, "fideos": 250, "coca-cola": 200}
 
+#Consultar stock:
 producto = input("Ingrese el producto a consultar: ")
 print(stock_mercaderia.get(producto, "Producto no encontrado"))  
 
+#Agregar unidades al stock si el producto ya existe:
 
+#Agregar nuevo producto si no existe:
