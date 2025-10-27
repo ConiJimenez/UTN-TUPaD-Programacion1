@@ -109,4 +109,9 @@ al_menos_uno = parcial1 | parcial2
 print("Aprobó al menos un parcial de ambos:", al_menos_uno)
 
 #EJERCICIO 8:
+stock_mercaderia = {"aceite": 300, "fideos": 250, "coca-cola": 200}
+
+producto = input("Ingrese el producto a consultar: ")
+print(stock_mercaderia.get(producto, "Producto no encontrado"))  
+
 
