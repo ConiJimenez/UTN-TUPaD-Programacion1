@@ -47,3 +47,15 @@ palabras_unicas = set(palabras)
 print("\nPalabras únicas:")
 print(palabras_unicas)
 
+recuento = {}
+
+for palabra in palabras:
+    if palabra in recuento:
+        recuento[palabra] += 1
+    else:
+        recuento[palabra] = 1
+
+print("Cantidad de veces que aparece cada palabra:")
+print(recuento)
+
+#EJERCICIO 6:
