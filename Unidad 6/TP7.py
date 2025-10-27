@@ -82,3 +82,33 @@ for nombre, notas in alumnos.items():
     print(f"{nombre}: {promedio:.2f}")
 
 #EJERCICIO 7:
+estudiantes = []
+
+parcial1 = set()
+parcial2 = set()
+
+print("Ingrese los nombres de los alumnos que aprobaron el Parcial 1 (enter para terminar): ")
+while True:
+    alumno = input("Nombre del alumno: ")
+    if alumno == "":
+        break
+    parcial1.add(alumno)
+
+print("Ingrese los nombre de los alumnos que aprobaron el Parcial 2 (enter para terminar): ")
+while True:
+    alumno = input("Nombre del alumno: ")
+    if alumno == "":
+        break
+    parcial2.add(alumno)
+
+ambos = parcial1 & parcial2
+print("Aprobó ambos parciales:", ambos)
+
+solo_uno = parcial1 ^ parcial2
+print("Aprobó solo uno de los parciales:", solo_uno)
+
+al_menos_uno = parcial1 | parcial2
+print("Aprobó al menos un parcial de ambos:", al_menos_uno)
+
+#EJERCICIO 8:
+
