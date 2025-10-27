@@ -59,3 +59,7 @@ print("Cantidad de veces que aparece cada palabra:")
 print(recuento)
 
 #EJERCICIO 6:
+alumnos = []
+
+for i in range(3):
+    nombre = input("Ingrese su nombre: ")
