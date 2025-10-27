@@ -139,11 +139,28 @@ for nombre, cantidad in stock_mercaderia.items():
     print(f"{nombre}: {cantidad}")
 
 #EJERCICIO 9:
-agenda = {("Lunes", "10.00"): "Reunión con equipo", ("Martes", "13.00"): "Asistir a congreso", ("Viernes", "08.00"): "Ateneo de casos" }
+agenda = {("Lunes", "10:00"): "Reunión con equipo", ("Martes", "13:00"): "Asistir a congreso", ("Viernes", "08:00"): "Ateneo de casos" }
 
+dia = input("Ingrese el día: ")
+hora = input("Ingrese la hora: ")
 
+clave = (dia, hora)
 
-
-
+if clave in agenda:
+    print(f"Actividad: {agenda[clave]}")
+else:
+    print("No hay ninguna actividad programada para ese horario.")
 
 #EJERCICIO 10:
+mapa = {"Argentina": "Buenos Aires", "Chile": "Santiago", "Inglaterra": "Londres"}
+
+invertido = {}
+
+for pais, capital in mapa.items():
+    invertido[capital] = pais
+
+print("Diccionario original: ")
+print(mapa)
+
+print("Diccionario invertido: ")
+print(invertido)
