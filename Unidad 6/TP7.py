@@ -137,3 +137,11 @@ else:
 print("Stock final: ")
 for nombre, cantidad in stock_mercaderia.items():
     print(f"{nombre}: {cantidad}")
+
+#EJERCICIO 9:
+agenda = {}
+
+
+
+
+#EJERCICIO 10:
