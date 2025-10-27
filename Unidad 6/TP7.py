@@ -142,7 +142,7 @@ for nombre, cantidad in stock_mercaderia.items():
 agenda = {("Lunes", "10:00"): "Reunión con equipo", ("Martes", "13:00"): "Asistir a congreso", ("Viernes", "08:00"): "Ateneo de casos" }
 
 dia = input("Ingrese el día: ")
-hora = input("Ingrese la hora: ")
+hora = input("Ingrese la hora (en formato 00:00): ")
 
 clave = (dia, hora)
 
