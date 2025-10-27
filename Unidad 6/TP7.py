@@ -82,8 +82,6 @@ for nombre, notas in alumnos.items():
     print(f"{nombre}: {promedio:.2f}")
 
 #EJERCICIO 7:
-estudiantes = []
-
 parcial1 = set()
 parcial2 = set()
 
