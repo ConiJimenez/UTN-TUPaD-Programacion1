@@ -73,7 +73,12 @@ for i in range(3):
     alumnos[nombre] = notas
 
 for nombre, notas in alumnos.items():
-    promedio = sum(notas) / len(notas)
+    
+    total = 0 
+    for nota in notas:
+        total += nota
+
+    promedio = total / len(notas)
     print(f"{nombre}: {promedio:.2f}")
 
 #EJERCICIO 7:
