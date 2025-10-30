@@ -9,3 +9,4 @@ def mostrar_productos():
     with open("productos.txt", "r") as archivo:
         for linea in archivo:
             nombre, precio, cantidad = linea.strip().split(",")
+            print(f"Producto: {nombre} | Precio: ${precio} | Cantidad: {cantidad}")
