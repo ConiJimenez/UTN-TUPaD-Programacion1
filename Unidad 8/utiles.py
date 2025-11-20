@@ -45,3 +45,24 @@ def cargar_productos_en_lista():
         mostrar_lista(productos)
         return productos
 
+def buscar_producto(productos):
+    if len(productos) == 0:
+        print("No hay productos en la lista. Debe cargarlos primero")
+        return
+    
+    nombre_buscado = input("Ingrese el nombre del producto que desea buscar: ")
+    encontrado = False
+
+    for producto in productos:
+        if producto['nombre'].lower() == nombre_buscado.lower():
+            print(f"Producto: {producto['nombre']} | Precio: ${producto['precio']} | Cantidad: {producto['cantidad']}")
+            encontrado = True
+            break
+
+    if not encontrado:
+        print("Producto no encontrado.")
+
+def reescribir_archivo(productos):
+    if len(productos) == 0:
+        print("No hay productos en la lista. Debe cargarlos primero")
+        return

@@ -2,3 +2,4 @@ lapicera,$120.5,30
 cuaderno,$300.0,15
 goma,$80.0,50
 cartuchera,40.0,100
+regla,10.0,100
