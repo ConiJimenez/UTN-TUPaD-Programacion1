@@ -66,3 +66,6 @@ def reescribir_archivo(productos):
     if len(productos) == 0:
         print("No hay productos en la lista. Debe cargarlos primero")
         return
+    with open("productos.txt","w") as archivo:
+        for producto in productos:
+            archivo.write(f"{producto['nombre']}, {producto['precio']}, {producto['cantidad']}")
