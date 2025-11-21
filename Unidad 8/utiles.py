@@ -68,4 +68,4 @@ def reescribir_archivo(productos):
         return
     with open("productos.txt","w") as archivo:
         for producto in productos:
-            archivo.write(f"{producto['nombre']}, {producto['precio']}, {producto['cantidad']}")
+            archivo.write(f"{producto['nombre']}, {producto['precio']}, {producto['cantidad']}\n")
